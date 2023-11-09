@@ -75,13 +75,13 @@
                         <div>
                             <label for="password">PASSWORD</label>
                             <br>
-                            <input class="error" type="password" id="password" name="Password" required>
-                            <small class="hidden">* Passwords do not match!</small>
+                            <input class="error" type="password" id="password" name="Password" minlength="7" required>
+                            <small class="show">* Minimum 7 characters</small>
                         </div>
                         <div>
                             <label for="confirm_password">CONFIRM PASSWORD</label>
                             <br>
-                            <input class="error" type="password" id="confirm_password" name="Confirm password" required>
+                            <input class="error" type="password" id="confirm_password" name="Confirm password" minlength="7" required>
                         </div>
                     </fieldset>
                 </div>

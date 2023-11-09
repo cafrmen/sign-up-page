@@ -75,7 +75,9 @@ p, button, fieldset {
 
 .top {
     padding-top: 12px;
-    font-size: 1.1em;
+    font-size: 1.01em;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 form {
@@ -111,13 +113,14 @@ h2 {
 
 input {
     width: 80%;
-    padding: 7px;
+    padding: calc(var(--second) / 69);
     border: 1px solid #E5E7EB;
     border-radius: 3px;
 }
 
 input:focus {
     border-color: lightblue;
+    box-shadow: 2px 2px 3px lightblue;
 }
 
 input::placeholder {
@@ -128,15 +131,11 @@ input::placeholder {
     border-color: tomato;
 }
 
-.hidden {
-    display: none;
-    visibility: hidden;
-}
-
 .show {
     display: block;
     visibility: visible;
     color: tomato;
+    font-size: small;
 }
 
 .three {
